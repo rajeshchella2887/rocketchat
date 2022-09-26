@@ -1,1 +1,8 @@
-test
+---
+- name: Report
+  hosts: localssh
+  gather_facts: true
+  ignore_unreachable: yes
+  ignore_errors: yes
+  roles:
+    - report
